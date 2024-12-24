@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: #f0f0f0;
+  --Red: #f9004d;
+  --padding: 50px;
+}
+
+body {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-image: url(./assets/codergirl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+  color: var(--White);
+}
+
+/* HEADER SECTION */
+/* Header */
+header {
+  /* background-color: red; */
+  padding: var(--padding);
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: green; */
+}
+
+/* nav - logo */
+h1 {
+  letter-spacing: -2px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.redText {
+  color: var(--Red);
+}
+
+/* nav - menu */
+ul {
+  display: flex;
+  gap: 60px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+ul li a:hover {
+  color: var(--Red);
+}
+
+/* nav - buttons */
+
+nav div {
+  display: flex;
+  gap: 40px;
+}
+
+nav div button {
+  color: var(--White);
+  border: none;
+  cursor: pointer;
+}
+
+nav div button:hover {
+  color: var(--Red);
+}
+
+.login {
+  background-color: transparent;
+}
+
+.register {
+  background-color: black;
+  padding-inline: 20px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 640px) {
+  ul,
+  .userButtonsContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .mobileMenu {
+    display: none;
+  }
+}
+
+/* MAIN SECTION */
+
+main {
+  padding: var(--padding);
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 550px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 55px;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+}
+
+.hero button {
+  width: 80px;
+  padding: 8px 0px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 640px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
